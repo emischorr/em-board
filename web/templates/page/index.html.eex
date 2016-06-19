@@ -1,0 +1,318 @@
+<div class="step" id="groups">
+
+  <div class="group box">
+    <header>
+      Gruppe A
+    </header>
+    <div class="body">
+
+      <%= for match <- @data[:matches][:group_a] do %>
+
+      <div class="match">
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["homeTeamName"]) %>" /></div>
+          <span><%= team_name(match["homeTeamName"]) %></span>
+        </div>
+        <div class="result"><%= print_result(match) %></div>
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["awayTeamName"]) %>" /></div>
+          <span><%= team_name(match["awayTeamName"]) %></span>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+    <div class="footer">
+      <table>
+        <colgroup>
+          <col width="30px">
+          <col width="*">
+          <col width="50px">
+        </colgroup>
+        <%= for team <- @data[:groups]["A"] do %>
+          <tr>
+            <td><div class="flag"><img src="<%= flag(team["team"]) %>" /></div></td>
+            <td><%= team_name(team["team"]) %></td>
+            <td><%= team["points"] %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+
+
+  <div class="group box">
+    <header>
+      Gruppe B
+    </header>
+    <div class="body">
+
+      <%= for match <- @data[:matches][:group_b] do %>
+
+      <div class="match">
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["homeTeamName"]) %>" /></div>
+          <span><%= team_name(match["homeTeamName"]) %></span>
+        </div>
+        <div class="result"><%= print_result(match) %></div>
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["awayTeamName"]) %>" /></div>
+          <span><%= team_name(match["awayTeamName"]) %></span>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+    <div class="footer">
+      <table>
+        <colgroup>
+          <col width="30px">
+          <col width="*">
+          <col width="50px">
+        </colgroup>
+        <%= for team <- @data[:groups]["B"] do %>
+          <tr>
+            <td><div class="flag"><img src="<%= flag(team["team"]) %>" /></div></td>
+            <td><%= team_name(team["team"]) %></td>
+            <td><%= team["points"] %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+
+
+  <div class="group box">
+    <header>
+      Gruppe C
+    </header>
+    <div class="body">
+
+      <%= for match <- @data[:matches][:group_c] do %>
+
+      <div class="match">
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["homeTeamName"]) %>" /></div>
+          <span><%= team_name(match["homeTeamName"]) %></span>
+        </div>
+        <div class="result"><%= print_result(match) %></div>
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["awayTeamName"]) %>" /></div>
+          <span><%= team_name(match["awayTeamName"]) %></span>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+    <div class="footer">
+      <table>
+        <colgroup>
+          <col width="30px">
+          <col width="*">
+          <col width="50px">
+        </colgroup>
+        <%= for team <- @data[:groups]["C"] do %>
+          <tr>
+            <td><div class="flag"><img src="<%= flag(team["team"]) %>" /></div></td>
+            <td><%= team_name(team["team"]) %></td>
+            <td><%= team["points"] %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+
+
+
+  <div class="group box">
+    <header>
+      Gruppe D
+    </header>
+    <div class="body">
+
+      <%= for match <- @data[:matches][:group_d] do %>
+
+      <div class="match">
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["homeTeamName"]) %>" /></div>
+          <span><%= team_name(match["homeTeamName"]) %></span>
+        </div>
+        <div class="result"><%= print_result(match) %></div>
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["awayTeamName"]) %>" /></div>
+          <span><%= team_name(match["awayTeamName"]) %></span>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+    <div class="footer">
+      <table>
+        <colgroup>
+          <col width="30px">
+          <col width="*">
+          <col width="50px">
+        </colgroup>
+        <%= for team <- @data[:groups]["D"] do %>
+          <tr>
+            <td><div class="flag"><img src="<%= flag(team["team"]) %>" /></div></td>
+            <td><%= team_name(team["team"]) %></td>
+            <td><%= team["points"] %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+
+
+  <div class="group box">
+    <header>
+      Gruppe E
+    </header>
+    <div class="body">
+
+      <%= for match <- @data[:matches][:group_e] do %>
+
+      <div class="match">
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["homeTeamName"]) %>" /></div>
+          <span><%= team_name(match["homeTeamName"]) %></span>
+        </div>
+        <div class="result"><%= print_result(match) %></div>
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["awayTeamName"]) %>" /></div>
+          <span><%= team_name(match["awayTeamName"]) %></span>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+    <div class="footer">
+      <table>
+        <colgroup>
+          <col width="30px">
+          <col width="*">
+          <col width="50px">
+        </colgroup>
+        <%= for team <- @data[:groups]["E"] do %>
+          <tr>
+            <td><div class="flag"><img src="<%= flag(team["team"]) %>" /></div></td>
+            <td><%= team_name(team["team"]) %></td>
+            <td><%= team["points"] %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+
+
+  <div class="group box">
+    <header>
+      Gruppe F
+    </header>
+    <div class="body">
+
+      <%= for match <- @data[:matches][:group_f] do %>
+
+      <div class="match">
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["homeTeamName"]) %>" /></div>
+          <span><%= team_name(match["homeTeamName"]) %></span>
+        </div>
+        <div class="result"><%= print_result(match) %></div>
+        <div class="team">
+          <div class="flag"><img src="<%= flag(match["awayTeamName"]) %>" /></div>
+          <span><%= team_name(match["awayTeamName"]) %></span>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+    <div class="footer">
+      <table>
+        <colgroup>
+          <col width="30px">
+          <col width="*">
+          <col width="50px">
+        </colgroup>
+        <%= for team <- @data[:groups]["F"] do %>
+          <tr>
+            <td><div class="flag"><img src="<%= flag(team["team"]) %>" /></div></td>
+            <td><%= team_name(team["team"]) %></td>
+            <td><%= team["points"] %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="step" id="round-of-16">
+
+  <div class="group box">
+    <header>
+      Achtelfinale
+    </header>
+    <div class="body">
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="group box">
+    <header>
+      Viertelfinale
+    </header>
+    <div class="body">
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="group box">
+    <header>
+      Halbfinale
+    </header>
+    <div class="body">
+
+    </div>
+  </div>
+
+
+
+
+  <div class="group box">
+    <header>
+      Finale
+    </header>
+    <div class="body">
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.updateState = function(state) {
+    console.log(state);
+    window.location.reload(true);
+  }
+</script>

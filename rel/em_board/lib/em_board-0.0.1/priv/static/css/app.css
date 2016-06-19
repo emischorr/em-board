@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+
+body {
+  /*background-image: url("/images/chalkboard-background.jpg");*/
+  background-color: #2b2b2b;
+  background-blend-mode: overlay;
+  color: #E0E0E0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1.3em;
+}
+
+.step {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#groups {
+  width: 1300px;
+}
+
+#round-of-16 {
+  width: 450px;
+}
+
+
+.box {
+  background: #2F2F2F;
+  box-shadow: 0px 2px 35px 0px rgba(0,0,0,0.75);
+  border: 4px solid #383838;
+  box-sizing: border-box;
+}
+
+.group {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin: 10px;
+}
+
+.box header {
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: #383838;
+  color: #68A568;
+  /*box-shadow: 0px -4px 30px 0px rgba(0,0,0,0.75);*/
+}
+
+.box .body {
+  padding: 6px;
+  box-sizing: border-box;
+  border: 4px solid rgba(45, 45, 45, 0.75);
+}
+
+.box .footer {
+  background: #383838;
+}
+
+.box .footer table {
+  width: 100%;
+}
+
+.match {
+  margin: 15px 0;
+}
+
+.result {
+  display: inline-block;
+  width: 40px;
+}
+
+.team {
+  display: inline-block;
+  width: 160px;
+}
+
+.flag {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  overflow:hidden;
+}
+
+.flag img {
+  max-height: 20px;
+  margin-left: -5px;
+}
+
+
+/*# sourceMappingURL=app.css.map*/
