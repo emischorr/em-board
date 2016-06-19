@@ -105,7 +105,11 @@ defmodule EmBoard.Data do
   defp call(url, default \\ %{}) do
     Logger.info "fetch data from "<>url
     data_config = Application.get_env(:em_board, :data)
-    case HTTPoison.get(url, [{"X-Auth-Token", data_config[:api_token]}], [{:proxy, data_config[:proxy]}]) do
+    data = case data_config[:proxy] do
+      nil -> HTTPoison.get(url, [{"X-Auth-Token", data_config[:api_token]}], [])
+      _ -> HTTPoison.get(url, [{"X-Auth-Token", data_config[:api_token]}], [{:proxy, data_config[:proxy]}])
+    end
+    case data do
       { :ok, %HTTPoison.Response{status_code: 200, body: body} } ->
         processData(body)
       {:ok, %HTTPoison.Response{status_code: 429}} ->
